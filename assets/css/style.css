@@ -314,9 +314,9 @@ main>.slider{
 dialog{
     display: none;
     position: fixed;
-    width: clamp(20em, 80dvw, 50em);
+    width: clamp(15em, 80dvw, 50em);
     place-self: center;
-    transform: translate(0, 20vh);
+    transform: translate(0, 5vh);
     top: 0;
     left: 0;
     z-index: 150;
@@ -370,16 +370,7 @@ dialog>.img>img{
     background-color: #333333cc;
     z-index: 100;
 }
-.add-to-cart{
-    font-weight: bold;
-    padding: 0.3em 1.2em;
-    margin: 0.5em 0em;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    border: none;
-    color: white;
-    background-color: var(--mainColor);
-}
+
 
 /* footer */
 .social{
