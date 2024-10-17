@@ -26,7 +26,7 @@ function sliding(){
     startInterval();
     const sliderButtons = document.querySelectorAll('[data-slider-button]');
     sliderButtons.forEach(el => {
-        el.addEventListener('click', ()=>{
+        el.addEventListener('pointerdown', ()=>{
             stopInterval()
             const offset = el.className === 'next' ? 1 : -1;
             moveToSlide(offset)
