@@ -34,8 +34,6 @@ function smoothLoading(img){
 }
 
 
-
-
 //make and remove overlay
 function makeOverlay(){
     if(! document.querySelector('.overlay')){
@@ -55,7 +53,5 @@ function removeOverlay(){
         document.querySelector('body').style.pointerEvents = 'auto';
     }
 }
-
-
 
 

@@ -18,7 +18,7 @@ function cardStructure(data, parent){
             let dots;
             dots = (el.description.length > 30) ? "..." : "";
             p.textContent = el.description.substr(0, 30) + dots;
-            strong.textContent = String(this.price).match(/^\d+\.00/)? '$'+parseInt(this.price): '$'+this.price;
+            strong.textContent = String(el.price).match(/^\d+\.00/)? '$'+parseInt(el.price): '$'+el.price;
             text.append(p, strong);
             card.append(img, text);
             fragment.appendChild(card);
