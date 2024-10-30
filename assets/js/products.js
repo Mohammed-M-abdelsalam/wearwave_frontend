@@ -23,3 +23,5 @@ function newProducts(cardStructure){
         }));
 }
 newProducts(cardStructure);
+
+
