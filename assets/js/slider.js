@@ -12,8 +12,9 @@ function sliding(){
         delete activeSlide.dataset.active;
     }
     
-    let interval; 
+    let interval;
     function startInterval(){
+        clearInterval(interval);
         interval = setInterval(()=>{
             moveToSlide(1)
         }, 6000)
@@ -35,5 +36,6 @@ function sliding(){
     });
 }
 
-
 sliding();
+
+
