@@ -28,6 +28,9 @@ function cardStructure(data, parent){
             card.addEventListener('click', getProductDetails.bind(el, closeProductDialog));
             card.removeEventListener('click', getProductDetails.bind(el, closeProductDialog));
         })
-        cards.appendChild(fragment);
+        setTimeout(() => { 
+            cards.innerHTML = "";
+            cards.appendChild(fragment);
+        }, 1000);
     }
 }

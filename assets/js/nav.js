@@ -44,10 +44,18 @@ function getCategoryProducts(e, setActiveCategory, cardStructure){
     // document.querySelector('main').style.display = 'none';
     document.querySelector('.featured-products').style.display = 'none';
     document.querySelector('.new-products').style.display = 'none';
+    document.querySelector('.category-section').style.display = 'block';
     const cards = document.querySelector('.category-section .cards');
     cards.style.display = 'flex';
     cards.textContent = "";
     fetchUrl(`https://fakestoreapi.com/products/category/${this.className}`, data => {
+        cards.innerHTML = `
+            <div class="balls">
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>
+        `;
         cardStructure(data, cards);
     })       
 }
